@@ -108,24 +108,26 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
-from sklearn.externals import joblib
+import joblib
 
-# Load the diabetes dataset
 diabetes_dataset = pd.read_csv('diabetes.csv')
 
-# Preprocess the dataset
 x = diabetes_dataset.drop(columns='Outcome', axis=1)
 y = diabetes_dataset['Outcome']
 scaler = StandardScaler()
 scaler.fit(x)
 x = scaler.transform(x)
 
-# Split the dataset into training and testing sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=2)
-
-# Train the SVM classifier
 classifier = svm.SVC(kernel='linear')
 classifier.fit(x_train, y_train)
 
-# Save the trained model
 joblib.dump(classifier, 'model.pkl')
+loaded_model = joblib.load('model.pkl')
+
+def predict(input_values):
+    scaled_values = scaler.transform([input_values])
+    
+    prediction = loaded_model.predict(scaled_values)
+    
+    return prediction

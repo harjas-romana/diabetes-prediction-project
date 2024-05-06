@@ -304,13 +304,14 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5173/predict", inputValues);
+      const response = await axios.post("/predict", inputValues);
       setResult(response.data.prediction);
       setShowResult(true);
     } catch (error) {
       console.error("Error:", error);
     }
   };
+  
 
   return (
     <div className="main-block">

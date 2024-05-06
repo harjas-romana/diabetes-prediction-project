@@ -77,26 +77,26 @@ html, body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   color: white; /* Change font color to white */
-  background-image: url("https://cdn.magzter.com/1400062889/1657901043/articles/BhwPhhid71660224703120/SIDHU-MOOSE-WALA-A-COMPLEX-CHARACTER-IN-LIFE-DEATH-AND-MUSIC.jpg");
+  background-image: url("https://e0.pxfuel.com/wallpapers/626/516/desktop-wallpaper-artificial-intelligence-background-business-intelligence.jpg");
   background-size: cover;
 }
 
 h1 {
   margin: 0 0 20px;
   font-weight:800;
-  color: white; /* Change font color to black */
+  color: white;
 }
 
 label {
   margin: 0 0 0px;
-  font-weight: 500; /* Make font bold */
-  color: white; /* Change font color to white */
+  font-weight: 500;
+  color: white;
   font-size: 14px;
 }
 
 p {
   margin: 0 0 5px;
-  color: white; /* Change font color to black */
+  color: white;
 }
 
 .main-block {
@@ -106,7 +106,7 @@ p {
   align-items: center;
   min-height: 75vh;
   background-size: cover;
-  position: relative; /* Add this line */
+  position: relative;
 }
 
 form {
@@ -114,8 +114,8 @@ form {
   margin: 10px;
   width: 50%;
   box-shadow: 0 2px 5px #f5f5f5;
-  background: rgba(0, 0, 0, 0.2); /* Change background color to 50% transparent black */
-  border: 2px solid red; /* Change border color to red */
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid red;
   border-radius: 8px;
 }
 
@@ -123,7 +123,7 @@ input, textarea {
   width: calc(50% - 18px);
   padding: 8px;
   margin-bottom: 20px;
-  border: 2px solid red; /* Change border color to red */
+  border: 2px solid red;
   border-radius: 4px;
   outline: none;
 }
@@ -141,10 +141,10 @@ button {
   padding: 10px;
   border: none;
   border-radius: 8px;
-  background: red; /* Change button color to red */
+  background: red;
   font-size: 16px;
-  font-weight: 500; /* Make font bold */
-  color: white; /* Change font color to white */
+  font-weight: 500;
+  color: white;
 }
 
 button:hover {
